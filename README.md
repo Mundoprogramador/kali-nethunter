@@ -2,8 +2,10 @@
 Este é um script pelo qual você pode instalar o Kali nethunter (Kali Linux) em seu aplicativo termux sem telefone enraizado
 
 Etapas para instalação
-Baixar script em HOME curl -LO https://github.com/Mundoprogramador/kali-nethunter
-Dê permissão de execuçãochmod +x kalinethunter
+Baixar script em HOME curl -LO 
+https://github.com/Mundoprogramador/kali-nethunter
+Dê permissão de execução
+chmod +x kalinethunter
 Executar script./kalinethunter
 
 
