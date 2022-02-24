@@ -1,22 +1,27 @@
-# kali-nethunter
-Este é um script pelo qual você pode instalar o Kali nethunter (Kali Linux) em seu aplicativo termux sem telefone enraizado
+# Nethunter-In-Termux
+This is a script by which you can install Kali nethunter (Kali Linux) in your termux application without rooted phone 
+### Steps For Installation
+1. Download script in **HOME** `curl -LO https://raw.githubu.com/Mundoprogramador/kali-nethunter`
+2. Give execution permission `chmod +x kalinethunter`
+3. Run script `./kalinethunter`
 
-Etapas para instalação
-Baixar script em HOME curl -LO 
-https://github.com/Mundoprogramador/kali-nethunter
-Dê permissão de execução
-chmod +x kalinethunter
-Executar script./kalinethunter
+### Usage 
+1. Use command `startkali` to start nethunter. Default user is __kali__ and default password is also __kali__.
+2. if you want to start nethunter as a root user then use command `startkali -r`.
+
+### VNC Guide
+1. To start a vnc session `vnc start`
+2. To stop a vnc session `vnc stop`
+3. To check status ( Display and port number) of vnc session `vnc status`
+4. If user is __kali__ then by default `vnc start` will start vncserver with `DISPLAY=:2` & `PORT=5902` and for root user `DISPLAY=:1` & `PORT=5901`
 
 
-#Uso
-1- Use o comando startkalipara iniciar o nethunter. O usuário padrão é kali e a senha padrão também é kali .
-2- se você deseja iniciar o nethunter como usuário root, use o comando startkali -r.
+### In Case Of SSL error: certificate verify failed
+Rerun script with extra parameter `--insecure` or copy paste this command `./kalinethunter --insecure`
 
-#Guia VNC
-01-Para iniciar uma sessão vncvnc start
-02- Para parar uma sessão vncvnc stop
-03- Para verificar o status (exibição e número da porta) da sessão vncvnc status
-04- Se o usuário for kali , por padrão vnc start, iniciará o vncserver com DISPLAY=:2& PORT=5902e para o usuário root DISPLAY=:1&PORT=5901
+#### setup LXDE 
+Default __DESKTOP__ is _XFCE4_ but you can setup __LXDE__ also https://www.hax4us.com/2018/07/how-to-install-lxde-in-kali-nethunter.html?m=1
+
+#### You have any idea to improve ? So Just give PR
 
 
